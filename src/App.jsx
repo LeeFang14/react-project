@@ -16,7 +16,7 @@ export default function App() {
     }
   }, [location.pathname, navigate]);
 
-  const defaultSelectValue = location.pathname.startsWith('/home') ? '/home' : '/about';
+  const defaultSelectValue = location.pathname.startsWith('/react-project/home') ? '/home' : '/about';
 
   function handleNavChange(event) {
     const selectedPage = event.target.value;
