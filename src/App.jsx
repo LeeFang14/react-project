@@ -16,8 +16,6 @@ export default function App() {
     }
   }, [location.pathname, navigate]);
 
-  const defaultSelectValue = location.pathname.startsWith('/react-project/home') ? '/home' : '/about';
-
   function handleNavChange(event) {
     const selectedPage = event.target.value;
     navigate(selectedPage);
@@ -111,7 +109,7 @@ export default function App() {
       <nav className={nav_container}>
         <span className={current_page}>{currentRouteName}</span>
         <div className={custom_select_context}>
-          <select className={custom_select_wrapper} onChange={handleNavChange} defaultValue={defaultSelectValue}>
+          <select className={custom_select_wrapper} onChange={handleNavChange} defaultValue='/home'>
             {navList.map((item) => (
               <option value={item.path} key={item.path}>
                 {item.name}
