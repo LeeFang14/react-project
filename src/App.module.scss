@@ -1,0 +1,114 @@
+@use './style/color';
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  background: color.$bg-100;
+}
+
+.header_container {
+  background: color.$primary;
+  display: flex;
+  padding: 8px 15px;
+  justify-content: space-between;
+  i {
+    color: color.$white;
+    font-size: 25px;
+  }
+}
+
+.person_context {
+  display: flex;
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+.bell_btn {
+  position: relative;
+  padding-right: 7px;
+  .notify {
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    background: color.$danger;
+    color: color.$white;
+  }
+}
+
+.person_btn {
+  background: color.$white;
+  color: color.$primary;
+  border-radius: 50%;
+  padding: 6px 3px;
+  font-size: 10px;
+}
+
+.nav_container {
+  background: color.$bg-100;
+  padding: 12px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current_page {
+  font-size: 16px;
+  color: color.$gray-100;
+}
+
+.custom_select_context {
+  position: relative;
+  display: inline-block;
+}
+.custom_select_wrapper {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 50px 8px 7px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 0px;
+  box-shadow: 2px 3px 5px color.$gray-100;
+  background: color.$white;
+  color: color.$gray-100;
+  cursor: pointer;
+  &:focus-visible {
+    outline: 0px;
+  }
+}
+
+.custom_arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: color.$primary;
+}
+
+.main_container {
+  display: flex;
+  background: color.$bg-100;
+  padding: 0px 8px;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn_context {
+  padding: 12px 8px;
+  position: sticky;
+  bottom: 5px;
+  text-align: end;
+}
+.home_btn {
+  color: color.$white;
+  background: color.$primary;
+  border-radius: 50%;
+  padding: 9.5px 8px;
+
+  i {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,31 @@
+@import './../../style/color';
+.card_list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card_item {
+  display: flex;
+  padding: 5px 0;
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px $gray-100;
+  color: $gray-100;
+  & > div {
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+  p {
+    margin: 0;
+  }
+  p:nth-child(3) {
+    font-size: 24px;
+  }
+}
+.abnormal {
+  background: $danger;
+  color: $white;
+}
+svg {
+  align-self: center;
+}
